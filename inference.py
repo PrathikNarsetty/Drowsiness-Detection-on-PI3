@@ -75,7 +75,7 @@ try:
 
         # audio alert
         if drowsy > THRESH:
-            cv2.putText(frame, "⚠ DROWSY ⚠", (180, 240),
+            cv2.putText(frame, "Drowsy", (180, 240),
                         cv2.FONT_HERSHEY_DUPLEX, 1.2, (0,0,255), 3)
             # fire off aplay (non‑blocking)
             subprocess.Popen(["aplay", ALERT_SOUND],
